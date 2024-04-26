@@ -24,5 +24,16 @@ closeButton.addEventListener("click", function () {
 });
 
 ////Task 3
+document.querySelector('#field').addEventListener('click',(event)=>{
+  const ball = document.querySelector('#ball');
+  let mouseX = event.clientX
+  let mouseY = event.clientY
+  let ballX = mouseX
+  let ballY = mouseY
+  ball.style.left = ballX + 'px'
+  ball.style.top = ballY + 'px'
+})
+
+
 
 
